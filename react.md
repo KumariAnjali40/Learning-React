@@ -14,3 +14,11 @@
 - State Management (React Don't have State Management) => Redux, Redux toolkit , Zustand , context API. (State Management)
 
 
+
+# if installing form basic react app
+
+ - npx create-react-app foldername.
+
+ # if installing form vite 
+
+ - npm create vite@lates  my-react-app --template
