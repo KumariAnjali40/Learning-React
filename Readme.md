@@ -32,10 +32,46 @@
 const reactElement = React.createElement(
     'a', => first parameter should be tag.
     {key:value} => second parameter should be an object.
-    direct_text => 
+    direct_text (children)
+    variable inject 
 
 )
 
+<hr>
+
+function ReactElement(type, key, ref, self, source, owner, props) {
+  const element = {
+    // This tag allows us to uniquely identify this as a React Element
+    $$typeof: REACT_ELEMENT_TYPE,
+
+    // Built-in properties that belong on the element
+    type,
+    key,
+    ref,
+    props,
+
+    // Record the component responsible for creating this element.
+    _owner: owner,
+  };
+}
+
+```
+
+<hr>
+
+``` 
+function App() {
+  
+  const username="Chunnu"
+
+
+  return (
+    <>
+    <Anjali/>
+     <p>Hello guys {username}</p>  => here we can only write evalution expression . 
+    </>
+  )
+}
 
 
 ```
