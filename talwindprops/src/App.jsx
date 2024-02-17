@@ -18,9 +18,9 @@ function App() {
     <>
        <h1 className='bg-green-400 text-black p-4 rounded-xl mb-4'>Tailwing test</h1>
 
-       <Card  username="chaiaurcode"/>
+       <Card  username="chaiaurcode" btnText="click me"/>
        
-       <Card/>
+       <Card username="anjali" btnText="click me"/>
     </>
   )
 }
