@@ -21,7 +21,7 @@
 
  # if installing form vite 
 
- - npm create vite@lates  my-react-app --template
+ - npm create vite@latest 
 
 
 
@@ -94,3 +94,7 @@ update
 
 
 - Reconciliation is the algorithm behind what is popularly understood as the "virtual DOM." A high-level description goes something like this: when you render a React application, a tree of nodes that describes the app is generated and saved in memory. This tree is then flushed to the rendering environment — for example, in the case of a browser application, it's translated to a set of DOM operations. When the app is updated (usually via setState), a new tree is generated. The new tree is diffed with the previous tree to compute which operations are needed to update the rendered app.
+
+
+
+
