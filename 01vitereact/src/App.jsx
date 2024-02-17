@@ -2,10 +2,13 @@ import Anjali from "./anjali"
 
 function App() {
   
+  const username="Chunnu"
+
+
   return (
     <>
     <Anjali/>
-     <p>Hello guys</p>
+     <p>Hello guys {username}</p>
     </>
   )
 }
