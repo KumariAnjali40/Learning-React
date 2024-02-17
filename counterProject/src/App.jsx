@@ -10,12 +10,16 @@ function App() {
   //counter is variable  and setCounter(it is a name only) is function and the default value is 15.
  
   const addValue = ()=>{
-    setCounter(counter+1);   //new value assign .
+    if(counter<20){
+    setCounter(counter+1); //new value assign .
     
+    }
   }
 
   const remvoeValue=()=>{
+    if(counter>0){
     setCounter(counter-1); 
+    }
     
   }
 
