@@ -1,0 +1,22 @@
+#counterDiv{
+
+    height: 300px;
+    width: 500px;
+    border: 1px solid ;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.btn{
+    
+}
+
+
+
+
+
+
+
+

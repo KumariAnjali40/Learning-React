@@ -1,0 +1,21 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 900px;
+  width: 100%;
+  border: 1px solid red;
+
+}
+
+.btn{
+  padding: 20px 40px;
+  border-radius: 10%;
+}
+
+
+
+
+
