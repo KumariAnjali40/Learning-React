@@ -1,7 +1,7 @@
 import React from 'react'
 // import Hookrules from './component/Hookrules'
-// import UseStateArray from './component/UseStateArray'
-import UseStateObject from './component/UseStateObject'
+import UseStateArray from './component/UseStateArray'
+// import UseStateObject from './component/UseStateObject'
 
 
 
@@ -32,8 +32,8 @@ const App = () => {
        {/* <h1>{val}</h1> */}
        {/* <button className='btn' onClick={changeName}>click please</button> */}
        {/* <Hookrules/> */}
-       {/* <UseStateArray/> */}
-       <UseStateObject/>
+       <UseStateArray/>
+       {/* <UseStateObject/> */}
     </div>
   )
 }
