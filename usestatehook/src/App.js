@@ -11,10 +11,16 @@ const App = () => {
   
 // var val="anjali"
 const changeName=()=>{
-  //  val="pandey" 
-  //  console.log(val);
-  val="navneet"
-  setChange(val);
+
+  //  console.log(val)
+
+   let myName=val;
+
+   if(myName==="anjali pandey"){
+    setChange("navneet");
+   }else{
+    setChange("anjali pandey")
+   }
 }
 console.log(val)
 
