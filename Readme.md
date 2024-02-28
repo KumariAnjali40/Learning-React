@@ -95,6 +95,25 @@ update
 
 - Reconciliation is the algorithm behind what is popularly understood as the "virtual DOM." A high-level description goes something like this: when you render a React application, a tree of nodes that describes the app is generated and saved in memory. This tree is then flushed to the rendering environment — for example, in the case of a browser application, it's translated to a set of DOM operations. When the app is updated (usually via setState), a new tree is generated. The new tree is diffed with the previous tree to compute which operations are needed to update the rendered app.
 
+**HOOKS RULES**
+
+- Always write it inside the component or function.
+- Component name must be PascalCase(first letter should be uppercase)
+- We can directly import or we can directly write it using React.hookName.
+- Don't call Hooks inside loops, conditions, or nested function.
+
+** useCallback HOOK **
+
+- useCallback is a React Hook that let's you cache a funtion defination between re-renders.
+
+- useCallback(fn, dependencies)
+
+** useEffect HOOK ** 
+
+- 
 
 
+** useRef Hook **
+
+- 
 
