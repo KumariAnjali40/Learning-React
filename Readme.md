@@ -114,6 +114,97 @@ update
 
 # Dependency List in UseEffect.
 
+- In React's useEffect hook, the dependency list is an optional second argument that determines when the effect function should run. It's an array of values that the effect depends on. The effect will only re-run if any of the values in the dependency list change between renders. If the dependency list is omitted, the effect runs after every render.
+
+``` react 
+
+
+  import React, { useEffect } from 'react';
+
+function MyComponent(props) {
+  useEffect(() => {
+    // Effect code here
+    // This code will run after the initial render and after every re-render
+    // if any value in the dependency list changes.
+
+    return () => {
+      // Cleanup code here
+      // This code will run when the component is unmounted or before the next effect runs.
+    };
+  }, [/*dependencies*/]);
+
+  return (
+    // JSX for the component
+  );
+}
+
+
+``` 
+
+# Why Dependency List is Important 
+
+
+- 1. Preventing Unnecessary Re-renders:
+
+- By specifying dependencies, you can avoid unnecessary re-execution of the effect function when certain values haven't changed. This can lead to better performance.
+
+- 2. Avoiding Stale Closures:
+
+- When using variables or props inside the useEffect function, React captures them in a closure. If these variables change and are not part of the dependency list, the effect will use stale values. Including them in the dependency list ensures the effect always has access to the latest values.
+
+
+# example 1 
+- No Dependancy List..
+
+``` react 
+
+ useEffect(() => {
+  console.log('Effect ran');
+  // This effect runs after every render
+});
+
+``` 
+# example 2
+- Empty Dependency List:
+
+```
+
+useEffect(() => {
+  console.log('Effect ran');
+  // This effect runs once after the initial render
+}, []);
+
+``` 
+
+# example -3 
+
+- Dependency List with a Variable:
+
+```
+  useEffect(() => {
+  console.log('Effect ran with count:', count);
+  // This effect runs if the 'count' variable changes
+  }, [count]);
+
+
+```
+
+
+# example -4 
+- Dependency List with Multiple Variables:
+
+```
+  useEffect(() => {
+  console.log('Effect ran with count and data:', count, data);
+  // This effect runs if either 'count' or 'data' changes
+  }, [count, data]);
+  
+
+
+``` 
+
+
+
 
 ** useRef Hook **
 
