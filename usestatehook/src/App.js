@@ -3,6 +3,7 @@ import React from 'react'
 // import UseStateArray from './component/UseStateArray'
 // import BasicForm from './component/forms/BasicForm'
 import UseEffect from './component/useEffect/UseEffect'
+import CleanUpFunction from './component/useEffect/CleanUpFunction'
 // import UseStateObject from './component/UseStateObject'
 
 
@@ -37,7 +38,8 @@ const App = () => {
        {/* <UseStateArray/> */}
        {/* <UseStateObject/> */}
        {/* <BasicForm/> */}
-       <UseEffect/>
+       {/* <UseEffect/> */}
+       <CleanUpFunction/>
     </div>
   )
 }
