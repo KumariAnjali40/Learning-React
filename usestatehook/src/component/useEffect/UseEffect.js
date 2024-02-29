@@ -6,7 +6,11 @@ const UseEffect = () => {
 
    useEffect(()=>{
     // console.log("HELLO");
+    if(count>=1){
     document.title=`Chats (${count})`
+    }else{
+        document.tilte=`Chats`
+    }
    })
 
   const countChange=()=>{
