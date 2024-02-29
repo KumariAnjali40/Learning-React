@@ -11,7 +11,7 @@ const UseEffect = () => {
     }else{
         document.tilte=`Chats`
     }
-   })
+   },[count])
 
   const countChange=()=>{
     setCount(count+1);

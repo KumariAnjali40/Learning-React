@@ -110,7 +110,9 @@ update
 
 ** useEffect HOOK ** 
 
-- 
+- useEffect is a hook in React, a JavaScript library for building user interfaces. It is used to perform side effects in functional components  Side effects can include data fetching, subscriptions, manually changing the DOM, and more. useEffect is the primary way to manage side effects in functional components compared to class components.
+
+# Dependency List in UseEffect.
 
 
 ** useRef Hook **
