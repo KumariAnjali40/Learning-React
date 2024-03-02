@@ -9,8 +9,8 @@
  ** USESTATE HOOK SYNTAX **
 
  - const [count, setCount] = useSta(0);
-           /      \                    \ 
-(state variable)  (updated function)
+           /      \                     \ 
+(state variable)  (updated function)       initial state
 
 - for state management.
 
