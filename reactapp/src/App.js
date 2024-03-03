@@ -1,9 +1,13 @@
 import React from 'react'
+import Resturant from './component/basics/Resturant'
 
 const App = () => {
   return (
-    <div>Hello World</div>
+    <>
+       <Resturant/>
+    </>
   )
 }
+
 
 export default App
