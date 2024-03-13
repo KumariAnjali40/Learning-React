@@ -27,6 +27,7 @@
 
 # createReact
 
+
 ``` react
 
 const reactElement = React.createElement(
@@ -38,6 +39,7 @@ const reactElement = React.createElement(
 )
 
 <hr>
+<br>
 
 function ReactElement(type, key, ref, self, source, owner, props) {
   const element = {
@@ -58,6 +60,7 @@ function ReactElement(type, key, ref, self, source, owner, props) {
 ```
 
 <hr>
+<br>
 
 ``` 
 function App() {
