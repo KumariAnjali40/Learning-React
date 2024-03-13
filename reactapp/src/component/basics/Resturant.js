@@ -8,6 +8,7 @@ const Resturant = () => {
 
   return (
     <>
+       <nav className='navbar'></nav>
        <MenuCard  menuData={menuData}/>
     </>
   )

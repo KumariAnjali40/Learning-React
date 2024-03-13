@@ -1,0 +1,44 @@
+what is react ?
+
+ans : React is a js library for building user interfaces , particularly for single page application where user interfaces need to be highly dynamic and interactive..
+
+React Hooks: Delve into hooks such as useState and useEffect, understanding their purpose and usage. 
+
+ans : useState: useState is a Hook that allows functional components to manage state.. it takes the intial state as an argument and returns an array containing the current state value and fuction to update the state.
+
+
+import React,{useState} from 'react';
+
+function Counter(){
+    const [count,setCount] = useState(0);
+}
+
+return (
+    <div>
+       <p>Count : {count} </p>
+
+       <button onClick={()=>setCount(count+1)}>Increments</button>
+    </div>
+);
+
+useEffect: useEffect is a hook that allows functional components to perform side effects (such as data fetching, subscription or manually changing the DOM ) after the components has rendered...
+
+import react ,{useState, useEffect} from 'react'
+
+import React, { useState, useEffect } from 'react';
+
+function Timer() {
+  const [seconds, setSeconds] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setSeconds(seconds + 1);
+    }, 1000);
+
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, [seconds]); // Run effect whenever "seconds" changes
+
+  return <div>Seconds: {seconds}</div>;
+}
